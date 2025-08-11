@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 type Product = {
   name: string;
   description: string;
@@ -18,17 +20,19 @@ export default function SectionProduits({ title, products }: SectionProduitsProp
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {products.map((product, idx) => (
             <div key={idx} className="bg-white rounded-2xl shadow-lg p-4 text-center transform transition hover:-translate-y-2 hover:shadow-2xl">
-              <img 
-                src={product.image || ``} 
-                alt={product.name} 
-                className="rounded-xl mb-4 transition-transform hover:scale-105 w-full h-40 object-cover" 
+              <Image
+                src={product.image || ``}
+                alt={product.name}
+                width={500}
+                height={500}
+                className="rounded-xl mb-4 transition-transform hover:scale-105 w-full h-40 object-cover"
               />
               <h3 className="text-lg text-[#FF6F91] font-semibold mb-2 truncate">{product.name}</h3>
               <p className="text-gray-600 mb-4 text-sm line-clamp-2">{product.description}</p>
               <p className="text-lg font-bold text-gradient">
-                {product.price.toLocaleString('fr-FR', { 
-                  style: 'currency', 
-                  currency: 'EUR' 
+                {product.price.toLocaleString('fr-FR', {
+                  style: 'currency',
+                  currency: 'EUR'
                 })}
               </p>
             </div>

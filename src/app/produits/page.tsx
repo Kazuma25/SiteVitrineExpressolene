@@ -13,7 +13,7 @@ export default function Home() {
           Information commande personnalisée
         </h2>
         <p className="text-center max-w-xl mx-auto text-[#a78bfa]">
-          Pour toute commande personnalisée, veuillez me contacter via les réseaux sociaux ou par email. Je serai ravie de discuter de vos idées et de créer quelque chose d'unique pour vous !
+          Pour toute commande personnalisée, veuillez me contacter via les réseaux sociaux ou par email. Je serai ravie de discuter de vos idées et de créer quelque chose d&apos;unique pour vous !
           <br/><br/>
           De plus les commandes personnalisées sont ouvert du 20 au 1er du mois suivant, les produits consernés sont : les terrariums, les illustrations, les porte-clés et les colliers.
         </p>

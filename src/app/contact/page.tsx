@@ -4,6 +4,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
 
 export default function Contact() {
   const recaptchaRef = useRef<ReCAPTCHA>(null);
@@ -90,7 +91,7 @@ export default function Contact() {
       recaptchaRef.current?.reset();
       setIsCaptchaValid(false);
 
-      const response = await emailjs.send(
+      await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         {
@@ -139,7 +140,7 @@ export default function Contact() {
             Contactez-moi
           </h1>
           <p className="text-[#6B7280] max-w-2xl mx-auto">
-            N'hésitez pas à me contacter pour toute question ou demande
+            N&apos;hésitez pas à me contacter pour toute question ou demande
             personnalisée. Je vous répondrai dans les plus brefs délais !
           </p>
         </section>
@@ -284,10 +285,12 @@ export default function Contact() {
                   href="https://www.instagram.com/expresso_crea"
                   className="flex items-center space-x-3 p-3 bg-white/80 rounded-lg hover:shadow-md transition-shadow"
                 >
-                  <img
+                  <Image
                     src="/images/logos/instagram.png"
                     alt="Instagram"
-                    className="w-6 h-6"
+                    width={24}
+                    height={24}
+                    className="object-contain group-hover:scale-110 transition-transform"
                   />
                   <span className="text-[#6B7280]">Instagram</span>
                 </a>
@@ -295,10 +298,12 @@ export default function Contact() {
                   href="https://www.tiktok.com/@expressolene"
                   className="flex items-center space-x-3 p-3 bg-white/80 rounded-lg hover:shadow-md transition-shadow"
                 >
-                  <img
+                  <Image
                     src="/images/logos/tiktok.png"
                     alt="TikTok"
-                    className="w-6 h-6"
+                    width={24}
+                    height={24}
+                    className="object-contain group-hover:scale-110 transition-transform"
                   />
                   <span className="text-[#6B7280]">TikTok</span>
                 </a>

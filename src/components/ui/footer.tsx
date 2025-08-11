@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -24,28 +26,28 @@ export default function Footer() {
             <h3 className="text-2xl font-bold text-gradient mb-4">Liens</h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
-                  className="text-[#6B7280] hover:text-[#FF6F91] transition-colors duration-300"
+                <Link
+                  href="/"
+                  className="text-[#6B7280] hover:text-[#FF6F91] font-medium text-lg transition-colors"
                 >
                   Accueil
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/produits"
                   className="text-[#6B7280] hover:text-[#FF6F91] transition-colors duration-300"
                 >
                   Produits
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="text-[#6B7280] hover:text-[#FF6F91] transition-colors duration-300"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -70,10 +72,12 @@ export default function Footer() {
                     href="https://www.instagram.com/expresso_crea"
                     className="flex-1 flex items-center justify-center bg-white/80 hover:bg-white transition-all duration-300 px-3 py-2 rounded-full group shadow-sm hover:shadow-md"
                   >
-                    <img
+                    <Image
                       src="/images/logos/instagram.png"
                       alt="Instagram"
-                      className="w-4 h-4 object-contain group-hover:scale-110 transition-transform"
+                      width={24}
+                      height={24}
+                      className="object-contain group-hover:scale-110 transition-transform"
                     />
                     <span className="ml-2 text-xs text-[#6B7280] group-hover:text-[#FF6F91]">
                       Instagram
@@ -83,10 +87,12 @@ export default function Footer() {
                     href="https://www.tiktok.com/@expressolene"
                     className="flex-1 flex items-center justify-center bg-white/80 hover:bg-white transition-all duration-300 px-3 py-2 rounded-full group shadow-sm hover:shadow-md"
                   >
-                    <img
+                    <Image
                       src="/images/logos/tiktok.png"
                       alt="TikTok"
-                      className="w-4 h-4 object-contain group-hover:scale-110 transition-transform"
+                      width={24}
+                      height={24}
+                      className="object-contain group-hover:scale-110 transition-transform"
                     />
                     <span className="ml-2 text-xs text-[#6B7280] group-hover:text-[#FF6F91]">
                       TikTok
@@ -96,10 +102,12 @@ export default function Footer() {
                     href="https://linktr.ee/Expressolene?fbclid=PAZXh0bgNhZW0CMTEAAadjBOUBQR43fuu6f8Hm-SWr05xZAJjAwbqVQIA44qfwc8hQk5pyT88GuDE8TQ_aem_wpgLHBhIZ_LtZ2EKp5bkfw"
                     className="flex-1 flex items-center justify-center bg-white/80 hover:bg-white transition-all duration-300 px-3 py-2 rounded-full group shadow-sm hover:shadow-md"
                   >
-                    <img
+                    <Image
                       src="/images/logos/linktree.png"
                       alt="Linktree"
-                      className="w-4 h-4 object-contain group-hover:scale-110 transition-transform"
+                      width={24}
+                      height={24}
+                      className="object-contain group-hover:scale-110 transition-transform"
                     />
                     <span className="ml-2 text-xs text-[#6B7280] group-hover:text-[#FF6F91]">
                       Linktree

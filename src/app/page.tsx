@@ -1,7 +1,6 @@
 import Footer from "@/components/ui/footer";
 import Header from "@/components/ui/header";
 import SectionProduits from "@/components/ui/SectionProduits";
-import ProductCategory from '@/components/ui/produitCategorie';
 import React from "react";
 
 export default function Home() {
@@ -32,7 +31,7 @@ export default function Home() {
             <p className="text-center max-w-2xl mx-auto text-[#6B7280] text-lg leading-relaxed glass-effect rounded-xl p-6 shadow-inner border border-white/60">
               Bienvenue dans mon univers coloré et chaleureux. Nous
               sélectionnons avec soin chaque produit afin de vous offrir le
-              meilleur de la créativité et de l'originalité, dans un style
+              meilleur de la créativité et de l&apos;originalité, dans un style
               pastel qui apporte douceur et sérénité.
             </p>
           </div>
@@ -52,7 +51,7 @@ export default function Home() {
             name: "Boucle d'oreilles papillon",
             description: "Une paire de boucles d'oreilles en forme de papillon, légères et élégantes.",
             price: 10,
-            image: "/images/produits/boucleoreille8.jpeg",
+            image: "/images/produits/boucleoreille7.jpeg",
           },
           {
             name: "Bracelet en perles assortis",
@@ -85,25 +84,6 @@ export default function Home() {
             price: 5,
             image: "/images/produits/porteClef4.jpeg",
           },
-        ]}
-      />
-
-      <ProductCategory
-        title="Nos Créations"
-        products={[
-          {
-            id: 1,
-            name: "Terrarium Ectoplasma",
-            image: "/images/produits/terrarium4.jpeg",
-            price: 70
-          },
-          {
-            id: 2,
-            name: "Boucles d'oreilles Papillon",
-            image: "/images/produits/boucleoreille8.jpeg",
-            price: 10
-          },
-          // Ajoutez autant de produits que vous voulez
         ]}
       />
 

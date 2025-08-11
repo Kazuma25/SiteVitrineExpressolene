@@ -12,7 +12,7 @@ export default function Header() {
           *.·:.☽✧ Expresolene - Shop ✧☾.:·.*
         </h1>
         <p className="text-xl mt-4 text-[#6B7280] font-medium">
-          Creatrice de décorations et illustrations dans n'importe qu'elle univers !
+          Creatrice de décorations et illustrations dans n&apos;importe qu&apos;elle univers !
         </p>
       </div>
     </header>

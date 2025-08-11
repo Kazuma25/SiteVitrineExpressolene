@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 type Product = {
   id: number;
@@ -38,9 +39,11 @@ export default function ProductCategory({ title, products }: ProductCategoryProp
               key={product.id}
               className="bg-white/80 rounded-2xl shadow-lg p-4 text-center transform transition hover:-translate-y-1 hover:shadow-xl"
             >
-              <img 
+              <Image 
                 src={product.image}
                 alt={product.name}
+                width={500}
+                height={500}
                 className="w-full h-48 object-cover rounded-xl mb-4 hover:scale-105 transition-transform"
               />
               <h3 className="text-lg text-[#FF6F91] font-semibold mb-2 truncate">
