@@ -121,7 +121,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 pt-6 border-t border-white/20 text-center text-[#6B7280]">
-          <p>© 2025 Exprossolene - shop. Tous droits réservés Kazuma2503.</p>
+          <p>© 2025 Exprossolene - shop. Tous droits réservés <a href="https://github.com/Kazuma25">AMAR Enzy</a>.</p>
         </div>
       </div>
     </footer>
