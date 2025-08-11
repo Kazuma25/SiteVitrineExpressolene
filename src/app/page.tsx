@@ -1,103 +1,122 @@
-import Image from "next/image";
+import Footer from "@/components/ui/footer";
+import Header from "@/components/ui/header";
+import SectionProduits from "@/components/ui/SectionProduits";
+import ProductCategory from '@/components/ui/produitCategorie';
+import React from "react";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="font-poppins bg-gradient-to-b from-[#fefaf6] via-[#ffe4ec] to-[#f7faff] text-gray-700 min-h-screen overflow-x-hidden">
+      <Header />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <section className="relative py-16 px-8 max-w-4xl mx-auto mt-10">
+        {/* Fond avec effet de carte moderne */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#fff5e4]/80 via-[#ffe4ec]/60 to-[#e0f7fa]/80 rounded-3xl transform rotate-1"></div>
+
+        {/* Conteneur principal */}
+        <div className="relative z-10 card-modern rounded-2xl p-8 shadow-lg border border-white/40">
+          {/* Éléments décoratifs */}
+          <div className="absolute -top-6 -right-6 w-24 h-24 bg-[#B5E8FF]/20 rounded-full blur-xl animate-[float_6s_ease-in-out_infinite]"></div>
+          <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-[#FFB5E8]/20 rounded-full blur-lg animate-[float_4s_ease-in-out_infinite]"></div>
+
+          {/* Icône principale */}
+          <div className="absolute top-6 left-6 w-16 h-16 glass-effect rounded-2xl flex items-center justify-center shadow-lg transform -rotate-6">
+            <span className="text-4xl">🌸</span>
+          </div>
+
+          {/* Contenu */}
+          <div className="mt-16">
+            <h2 className="text-4xl font-bold text-gradient text-center mb-8">
+              À propos de ma boutique
+            </h2>
+            <p className="text-center max-w-2xl mx-auto text-[#6B7280] text-lg leading-relaxed glass-effect rounded-xl p-6 shadow-inner border border-white/60">
+              Bienvenue dans mon univers coloré et chaleureux. Nous
+              sélectionnons avec soin chaque produit afin de vous offrir le
+              meilleur de la créativité et de l'originalité, dans un style
+              pastel qui apporte douceur et sérénité.
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      <SectionProduits
+        title="Présentation de nos produits"
+        products={[
+          {
+            name: "Terrarium Ectoplasma",
+            description: "Un térrarium unique avec un ectoplasma, parfait pour les fans de Pokémon !",
+            price: 70,
+            image: "/images/produits/terrarium4.jpeg",
+          },
+          {
+            name: "Boucle d'oreilles papillon",
+            description: "Une paire de boucles d'oreilles en forme de papillon, légères et élégantes.",
+            price: 10,
+            image: "/images/produits/boucleoreille8.jpeg",
+          },
+          {
+            name: "Bracelet en perles assortis",
+            description: "un bracelet coloré en perles assorties, parfait pour ajouter une touche de couleur à votre tenue.",
+            price: 5,
+            image: "/images/produits/braceller2.jpeg",
+          },          {
+            name: "une potion petite",
+            description: "une petite potion colorée, parfaite pour les collectionneurs et les fans de magie.",
+            price: 5,
+            image: "/images/produits/potionPetite2_dos.jpeg",
+          },          {
+            name: "stickers personnalisés",
+            description: "des stickers personnalisés avec des motifs uniques, parfaits pour décorer vos affaires.",
+            price: 2,
+            image: "/images/produits/stickers1.jpeg",
+          },          {
+            name: "Une potion grande",
+            description: "une grande potion colorée, idéale pour les fans de magie et de potions.",
+            price: 15,
+            image: "/images/produits/potion2_face.jpeg",
+          },{
+            name: "Illustration personnalisée",
+            description: "une illustration personnalisée réalisée à la main, parfaite pour décorer votre intérieur.",
+            price: 2,
+            image: "/images/produits/illustration1.jpeg",
+          },{
+            name: "Porte-clé personnalisé",
+            description: "un porte-clé personnalisé avec un design unique, parfait pour ajouter une touche personnelle à vos clés.",
+            price: 5,
+            image: "/images/produits/porteClef4.jpeg",
+          },
+        ]}
+      />
+
+      <ProductCategory
+        title="Nos Créations"
+        products={[
+          {
+            id: 1,
+            name: "Terrarium Ectoplasma",
+            image: "/images/produits/terrarium4.jpeg",
+            price: 70
+          },
+          {
+            id: 2,
+            name: "Boucles d'oreilles Papillon",
+            image: "/images/produits/boucleoreille8.jpeg",
+            price: 10
+          },
+          // Ajoutez autant de produits que vous voulez
+        ]}
+      />
+
+      <section className="py-12 px-6 max-w-4xl mx-auto animate-slideUp bg-white/80 rounded-3xl shadow-lg border border-[#B5E8FF]">
+        <h2 className="text-2xl text-[#FF6F91] text-center mb-6 relative after:block after:w-14 after:h-1 after:bg-[#B5E8FF] after:rounded after:mt-2 after:mx-auto">
+          Restons en contact
+        </h2>
+        <p className="text-center max-w-xl mx-auto text-[#a78bfa]">
+          Pour toute question ou information, contactez-moi via les réseaux sociaux.
+        </p>
+      </section>
+
+      <Footer />
     </div>
   );
 }
