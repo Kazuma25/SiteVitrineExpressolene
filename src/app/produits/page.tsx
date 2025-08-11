@@ -15,7 +15,7 @@ export default function Home() {
         <p className="text-center max-w-xl mx-auto text-[#a78bfa]">
           Pour toute commande personnalisée, veuillez me contacter via les réseaux sociaux ou par email. Je serai ravie de discuter de vos idées et de créer quelque chose d&apos;unique pour vous !
           <br/><br/>
-          De plus les commandes personnalisées sont ouvert du 20 au 1er du mois suivant, les produits consernés sont : les terrariums, les illustrations, les porte-clés et les colliers.
+          De plus les commandes personnalisées sont ouvert du 20 au 1er du mois suivant, les produits concernés sont : les terrariums, les illustrations, les porte-clés et les colliers.
         </p>
       </section>
 
@@ -61,18 +61,6 @@ export default function Home() {
           {
             id: 1,
             name: "collier",
-            image: "/images/produits/collier1.jpeg",
-            price: 10,
-          },
-          {
-            id: 2,
-            name: "collier",
-            image: "/images/produits/collier2.jpeg",
-            price: 10,
-          },
-          {
-            id: 2,
-            name: "collier",
             image: "/images/produits/collier3.jpeg",
             price: 10,
           },
@@ -83,19 +71,19 @@ export default function Home() {
             price: 10,
           },
           {
-            id: 2,
+            id: 3,
             name: "collier",
             image: "/images/produits/collier5.jpeg",
             price: 10,
           },
           {
-            id: 2,
+            id: 4,
             name: "collier",
             image: "/images/produits/collier6.jpeg",
             price: 10,
           },
           {
-            id: 2,
+            id: 5,
             name: "collier",
             image: "/images/produits/collier7.jpeg",
             price: 10,

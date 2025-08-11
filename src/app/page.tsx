@@ -29,10 +29,7 @@ export default function Home() {
               À propos de ma boutique
             </h2>
             <p className="text-center max-w-2xl mx-auto text-[#6B7280] text-lg leading-relaxed glass-effect rounded-xl p-6 shadow-inner border border-white/60">
-              Bienvenue dans mon univers coloré et chaleureux. Nous
-              sélectionnons avec soin chaque produit afin de vous offrir le
-              meilleur de la créativité et de l&apos;originalité, dans un style
-              pastel qui apporte douceur et sérénité.
+              Bonjour et bienvenue a tous sur ma boutique, ici vous retrouverez mes creations faites main proposés à la vente. pour me passez commande, veuillez me contacter via les réseaux sociaux ou mail. 
             </p>
           </div>
         </div>
@@ -42,46 +39,46 @@ export default function Home() {
         title="Présentation de nos produits"
         products={[
           {
-            name: "Terrarium Ectoplasma",
-            description: "Un térrarium unique avec un ectoplasma, parfait pour les fans de Pokémon !",
+            name: "Terrarium",
+            description: "Un terrarium personnalisable ou non selon vos envies.",
             price: 70,
             image: "/images/produits/terrarium4.jpeg",
           },
           {
-            name: "Boucle d'oreilles papillon",
-            description: "Une paire de boucles d'oreilles en forme de papillon, légères et élégantes.",
+            name: "Boucle d'oreilles",
+            description: "Une paire de boucles d'oreilles, légères et élégantes.",
             price: 10,
             image: "/images/produits/boucleoreille7.jpeg",
           },
           {
-            name: "Bracelet en perles assortis",
-            description: "un bracelet coloré en perles assorties, parfait pour ajouter une touche de couleur à votre tenue.",
+            name: "Bracelet en perles",
+            description: "un bracelet coloré en perles assorties personnalisable.",
             price: 5,
             image: "/images/produits/braceller2.jpeg",
           },          {
-            name: "une potion petite",
-            description: "une petite potion colorée, parfaite pour les collectionneurs et les fans de magie.",
+            name: "Collier",
+            description: "Collier en perle fait main personnalisable selon vos envies.",
             price: 5,
-            image: "/images/produits/potionPetite2_dos.jpeg",
+            image: "/images/produits/collier5.jpeg",
           },          {
             name: "stickers personnalisés",
-            description: "des stickers personnalisés avec des motifs uniques, parfaits pour décorer vos affaires.",
+            description: "des stickers personnalisés avec des motifs uniques.",
             price: 2,
             image: "/images/produits/stickers1.jpeg",
           },          {
-            name: "Une potion grande",
-            description: "une grande potion colorée, idéale pour les fans de magie et de potions.",
-            price: 15,
+            name: "Une potion décorative",
+            description: "Des potions colorée, idéale pour les fans de magie et de potions.",
+            price: 8,
             image: "/images/produits/potion2_face.jpeg",
           },{
             name: "Illustration personnalisée",
-            description: "une illustration personnalisée réalisée à la main, parfaite pour décorer votre intérieur.",
-            price: 2,
+            description: "illustrations personnalisées réalisées à la main.",
+            price: 3,
             image: "/images/produits/illustration1.jpeg",
           },{
             name: "Porte-clé personnalisé",
-            description: "un porte-clé personnalisé avec un design unique, parfait pour ajouter une touche personnelle à vos clés.",
-            price: 5,
+            description: "un porte-clé personnalisé avec un design unique.",
+            price: 6,
             image: "/images/produits/porteClef4.jpeg",
           },
         ]}

@@ -17,7 +17,7 @@ export default function Footer() {
               Boutique - Expressolene
             </h3>
             <p className="text-[#6B7280]">
-              Produits uniques et colorés pour un quotidien plein de douceur.
+              Bonjour et bienvenue a tous sur ma boutique, ici vous retrouverez mes creations faites main proposés à la vente. pour me passez commande, veuillez me contacter via les réseaux sociaux ou mail. 
             </p>
           </div>
 
