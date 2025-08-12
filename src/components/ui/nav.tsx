@@ -32,6 +32,12 @@ export default function NavigationMenuDemo() {
             Produits
           </Link>
           <Link
+            href="/adopter"
+            className="text-[#6B7280] hover:text-[#FF6F91] font-medium text-lg transition-colors"
+          >
+            adoptés
+          </Link>
+          <Link
             href="/contact"
             className="text-[#6B7280] hover:text-[#FF6F91] font-medium text-lg transition-colors"
           >
