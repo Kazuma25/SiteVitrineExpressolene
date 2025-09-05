@@ -29,7 +29,9 @@ export default function Home() {
               À propos de ma boutique
             </h2>
             <p className="text-center max-w-2xl mx-auto text-[#6B7280] text-lg leading-relaxed glass-effect rounded-xl p-6 shadow-inner border border-white/60">
-              Bonjour et bienvenue a tous sur ma boutique, ici vous retrouverez mes creations faites main proposés à la vente. pour me passez commande, veuillez me contacter via les réseaux sociaux ou mail. 
+              Bonjour et bienvenue a tous sur ma boutique, ici vous retrouverez
+              mes creations faites main proposés à la vente. pour me passez
+              commande, veuillez me contacter via les réseaux sociaux ou mail.
             </p>
           </div>
         </div>
@@ -40,42 +42,52 @@ export default function Home() {
         products={[
           {
             name: "Terrarium",
-            description: "Un terrarium personnalisable ou non selon vos envies.",
+            description:
+              "Un terrarium personnalisable ou non selon vos envies.",
             price: 70,
             image: "/images/produits/terrarium/terrarium4.jpg",
           },
           {
             name: "Boucle d'oreilles",
-            description: "Une paire de boucles d'oreilles, légères et élégantes.",
+            description:
+              "Une paire de boucles d'oreilles, légères et élégantes.",
             price: 10,
             image: "/images/produits/boucleoreille/boucleOreille7.jpg",
           },
           {
             name: "bracelets en perles",
-            description: "un bracelet coloré en perles assorties personnalisable.",
+            description:
+              "un bracelet coloré en perles assorties personnalisable.",
             price: 5,
             image: "/images/produits/bracelets/bracelets2.jpg",
-          },          {
+          },
+          {
             name: "Collier",
-            description: "Collier en perle fait main personnalisable selon vos envies.",
+            description:
+              "Collier en perle fait main personnalisable selon vos envies.",
             price: 5,
             image: "/images/produits/collier/collier5.jpg",
-          },          {
+          },
+          {
             name: "stickers personnalisés",
             description: "des stickers personnalisés avec des motifs uniques.",
             price: 2,
             image: "/images/produits/stickers/stickers1.jpg",
-          },          {
+          },
+          {
             name: "Potion décorative",
-            description: "Des potions colorée, idéale pour les fans de magie et de potions.",
+            description:
+              "Des potions colorée, idéale pour les fans de magie et de potions.",
             price: 8,
             image: "/images/produits/potion/grande/potion2.jpg",
-          },{
+          },
+          {
             name: "Illustration personnalisée",
             description: "illustrations personnalisées réalisées à la main.",
             price: 3,
             image: "/images/produits/illustration/illustration1.jpg",
-          },{
+          },
+          {
             name: "Porte-clé personnalisé",
             description: "un porte-clé personnalisé avec un design unique.",
             price: 6,
@@ -89,7 +101,8 @@ export default function Home() {
           Restons en contact
         </h2>
         <p className="text-center max-w-xl mx-auto text-[#a78bfa]">
-          Pour toute question ou information, contactez-moi via les réseaux sociaux.
+          Pour toute question ou information, contactez-moi via les réseaux
+          sociaux.
         </p>
       </section>
 
