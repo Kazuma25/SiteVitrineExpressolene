@@ -2,6 +2,8 @@ import Footer from "@/components/ui/footer";
 import Header from "@/components/ui/header";
 import ProductCategory from "@/components/ui/produitCategorie";
 import React from "react";
+import imgcharmtel from "@assets/produits/charmeTel/charmTel1.jpg";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -24,7 +26,7 @@ export default function Home() {
         </p>
       </section>
 
-      <ProductCategory
+      {/* <ProductCategory
         title="Les terrariums"
         chemins="terrarium"
         products={[
@@ -165,29 +167,29 @@ export default function Home() {
           {
             id: 5,
             name: "porte-clé Petshop",
-            image: "/images/produits/porteClef/porteClef5.jpg",
+            image: "/images/produits/porteClef/Petshop/porteClefPetshop5.jpg",
             price: 5,
           },
           {
             id: 6,
-            name: "porte-clé chats (roux et blanc)",
-            image: "/images/produits/porteClef/porteClef6.jpg",
+            name: "porte-clé chats en resine",
+            image: "/images/produits/porteClef/Resine/porteClefResine6.jpg",
             price: 5,
           },
           {
             id: 7,
-            name: "porte-clé chats (roux et blanc)",
-            image: "/images/produits/porteClef/porteClef7.jpg",
+            name: "porte-clé chats avec ails en resine",
+            image: "/images/produits/porteClef/Resine/porteClefResine1.jpg",
             price: 5,
           },
           {
             id: 8,
-            name: "porte-clé chats (roux et blanc)",
-            image: "/images/produits/porteClef/porteClef8.jpg",
+            name: "porte-clé susuwatarie (Voyage de Chihiro)",
+            image: "/images/produits/porteClef/Autres/porteClefAutre8.jpg",
             price: 5,
           },
         ]}
-      />
+      /> */}
 
       <ProductCategory
         title="les boucles d'oreilles"
@@ -196,55 +198,55 @@ export default function Home() {
           {
             id: 1,
             name: "",
-            image: "/images/produits/boucleOreille/boucleoreille1.jpg",
+            image: <Image src={imgcharmtel} alt=""></Image>,
             price: 5,
           },
-          {
-            id: 2,
-            name: "",
-            image: "/images/produits/boucleOreille/boucleoreille2.jpg",
-            price: 5,
-          },
-          {
-            id: 3,
-            name: "",
-            image: "/images/produits/boucleOreille/boucleoreille3.jpg",
-            price: 5,
-          },
-          {
-            id: 4,
-            name: "",
-            image: "/images/produits/boucleOreille/boucleoreille4.jpg",
-            price: 5,
-          },
-          {
-            id: 5,
-            name: "",
-            image: "/images/produits/boucleOreille/boucleoreille5.jpg",
-            price: 5,
-          },
-          {
-            id: 6,
-            name: "",
-            image: "/images/produits/boucleOreille/boucleoreille6.jpg",
-            price: 5,
-          },
-          {
-            id: 7,
-            name: "",
-            image: "/images/produits/boucleOreille/boucleoreille7.jpg",
-            price: 5,
-          },
-          {
-            id: 8,
-            name: "",
-            image: "/images/produits/boucleOreille/boucleoreille8.jpg",
-            price: 5,
-          },
+          // {
+          //   id: 2,
+          //   name: "",
+          //   image: "/images/produits/boucleOreille/boucleoreille2.jpg",
+          //   price: 5,
+          // },
+          // {
+          //   id: 3,
+          //   name: "",
+          //   image: "/images/produits/boucleOreille/boucleoreille3.jpg",
+          //   price: 5,
+          // },
+          // {
+          //   id: 4,
+          //   name: "",
+          //   image: "/images/produits/boucleOreille/boucleoreille4.jpg",
+          //   price: 5,
+          // },
+          // {
+          //   id: 5,
+          //   name: "",
+          //   image: "/images/produits/boucleOreille/boucleoreille5.jpg",
+          //   price: 5,
+          // },
+          // {
+          //   id: 6,
+          //   name: "",
+          //   image: "/images/produits/boucleOreille/boucleoreille6.jpg",
+          //   price: 5,
+          // },
+          // {
+          //   id: 7,
+          //   name: "",
+          //   image: "/images/produits/boucleOreille/boucleoreille7.jpg",
+          //   price: 5,
+          // },
+          // {
+          //   id: 8,
+          //   name: "",
+          //   image: "/images/produits/boucleOreille/boucleoreille8.jpg",
+          //   price: 5,
+          // },
         ]}
       />
 
-      <ProductCategory
+      {/* <ProductCategory
         title="Charme de telephone"
         chemins="charmeTel"
         products={[
@@ -263,37 +265,37 @@ export default function Home() {
           {
             id: 3,
             name: "",
-            image: "/images/produits/charmeTel/charmeTel.jpg",
+            image: "/images/produits/charmeTel/charmeTel3.jpg",
             price: 5,
           },
           {
             id: 4,
             name: "",
-            image: "/images/produits/charmeTel/charmeTel.jpg",
+            image: "/images/produits/charmeTel/charmeTel4.jpg",
             price: 5,
           },
           {
             id: 5,
             name: "",
-            image: "/images/produits/charmeTel/charmeTel.jpg",
+            image: "/images/produits/charmeTel/charmeTel5.jpg",
             price: 5,
           },
           {
             id: 6,
             name: "",
-            image: "/images/produits/charmeTel/charmeTel.jpg",
+            image: "/images/produits/charmeTel/charmeTel6.jpg",
             price: 5,
           },
           {
             id: 7,
             name: "",
-            image: "/images/produits/charmeTel/charmeTel.jpg",
+            image: "/images/produits/charmeTel/charmeTel7.jpg",
             price: 5,
           },
           {
             id: 8,
             name: "",
-            image: "/images/produits/charmeTel/charmeTel.jpg",
+            image: "/images/produits/charmeTel/charmeTel8.jpg",
             price: 5,
           },
         ]}
@@ -548,7 +550,7 @@ export default function Home() {
             price: 10,
           },
         ]}
-      />
+      /> */}
 
       <Footer />
     </div>

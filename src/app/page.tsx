@@ -30,7 +30,7 @@ export default function Home() {
             </h2>
             <p className="text-center max-w-2xl mx-auto text-[#6B7280] text-lg leading-relaxed glass-effect rounded-xl p-6 shadow-inner border border-white/60">
               Bonjour et bienvenue a tous sur ma boutique, ici vous retrouverez
-              mes creations faites main proposés à la vente. pour me passez
+              mes creations faites main proposés à la vente, ceci est un site vitrine pour me passer
               commande, veuillez me contacter via les réseaux sociaux ou mail.
             </p>
           </div>
